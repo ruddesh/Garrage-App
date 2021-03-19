@@ -76,7 +76,6 @@ class FormsController extends Controller
 
     public function getServices()
     {
-
         $services = Service::all();
         return Response::json($services);
     }

@@ -11,9 +11,15 @@
 
 <div class="container">
     {{-- <div class="main"> --}}
-    @include('form1')
+    <div id="f1">
+        @include('form1')
+    </div>
+    <div id="f2">
         @include('form2')
-    @include('form3')
+    </div>
+    <div id="f3">
+        @include('form3')
+    </div>
     {{-- </div> --}}
 </div>
 

@@ -31,7 +31,6 @@
                 <a class="navbar-brand" style="margin-left: -20px"  href="{{ url('/home') }}">
                     <h3 class="text-center" style="font-weight: bold; font-family: Fantasy; text-shadow: 2px 2px #ff4625;">GARRAGE</h3>
                 </a>
-                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -83,10 +82,13 @@
         <div class="constainer">
             @auth
                <div class="sidenav">
-                <a href="/form">Forms</a>
-                {{-- <a onclick="alert('sdf')">F1</a>
-                <a onclick="openTab('f2')">F2</a> --}}
-
+                <a href="/form" style="text-decoration: none;">Forms</a>
+                @if (request()->route()->getName() == 'forms')
+                    
+                <a href="#f1" style="text-decoration: none;">Form 1</a>
+                <a href="#f2" style="text-decoration: none;">Form 2</a>
+                <a href="#f3" style="text-decoration: none;">Form 3</a>
+                @endif
              </div>
              
              @endauth
