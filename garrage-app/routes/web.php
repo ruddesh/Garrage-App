@@ -20,7 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/form', [App\Http\Controllers\FormsController::class, 'index']);
+Route::get('/form', [App\Http\Controllers\FormsController::class, 'index'])->name('forms');
 Route::post('/form', [App\Http\Controllers\FormsController::class, 'store']);
 // Route::get('/getCarNames', function () {
 //     if (Request::ajax()) {
@@ -31,6 +31,6 @@ Route::get('/getCarNames', [App\Http\Controllers\FormsController::class, 'getCar
 Route::post('/category', [App\Http\Controllers\FormsController::class, 'setCatogory']);
 Route::get('/getCarYear', [App\Http\Controllers\FormsController::class, 'getCarManufacturingYear']);
 Route::get('/categories', [App\Http\Controllers\FormsController::class, 'getCategories']);
-Route::get('/services', [App\Http\Controllers\FormsController::class, 'getServices']);
+Route::get('/services', [App\Http\Controllers\FormsController::class, 'getServices'])->name('services');
 Route::post('/services', [App\Http\Controllers\FormsController::class, 'storeService']);
 // Route::get('/asdf', [App\Http\Controllers\FormsController::class, 'getOnlyServicesColumnValues']);
