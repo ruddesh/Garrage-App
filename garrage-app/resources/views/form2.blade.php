@@ -46,7 +46,7 @@
         <div class="card-header">Category Details</div>
 
         <div class="card-body">
-            <table class="table">
+            <table class="table table-borderless table-striped table-earning ">
                 <thead>
                     <tr>
                       <th scope="col">#</th>

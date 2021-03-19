@@ -84,8 +84,8 @@
             @auth
                <div class="sidenav">
                 <a href="/form">Forms</a>
-                <a onclick="alert('sdf')">F1</a>
-                <a onclick="openTab('f2')">F2</a>
+                {{-- <a onclick="alert('sdf')">F1</a>
+                <a onclick="openTab('f2')">F2</a> --}}
 
              </div>
              
@@ -102,13 +102,3 @@
     </div>
 </body>
 </html>
-<script type="text/javascript">
-    function openTab(cityName) {
-    var i;
-    var x = document.getElementsByClassName("tab");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    document.getElementById(cityName).style.display = "block";
-}
-</script>

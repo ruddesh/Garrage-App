@@ -12,9 +12,7 @@
 <div class="container">
     {{-- <div class="main"> --}}
     @include('form1')
-    <div id="f2" class="tab">
         @include('form2')
-    </div>
     @include('form3')
     {{-- </div> --}}
 </div>

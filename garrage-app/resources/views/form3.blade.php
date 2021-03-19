@@ -47,7 +47,7 @@
             <div class="card-header">Services & Prices</div>
 
             <div class="card-body">
-                <table class="table " id="tani">
+                <table class="table table-borderless table-striped table-earning " id="tani">
                     <thead>
                         <tr>
                           <th scope="col">#</th>
@@ -58,7 +58,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                                <th scope="row"></th>
+                                {{-- <th scope="row"></th> --}}
                         </tr>
                     </tbody>
                 </table>

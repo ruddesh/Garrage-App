@@ -31,11 +31,11 @@
 <br>
 {{-- <div class="row"> --}}
 <div class="col-lg-6">
-    <div class="overflow-scroll" >
+    <div class="card" >
         <div class="card-header">Vehicle Details</div>
 
         <div class="card-body ">
-            <table class="table " >
+            <table class="table table-borderless table-striped table-earning " >
                 <thead>
                     <tr>
                       <th scope="col">#</th>
